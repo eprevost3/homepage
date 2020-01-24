@@ -4,9 +4,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter, Router, Route, Switch} from 'react-router-dom'
 
+
+// VERY IMPORTANT : include basename={process.env.PUBLIC_URL}
 ReactDOM.render(
-      (<BrowserRouter>
-        <Route exact path={"/"} component={App}/>
+      (<BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Route exact path={"/homepage"} component={App}/>
       </BrowserRouter>), document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
