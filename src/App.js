@@ -1,38 +1,58 @@
 // deploy on github pages https://codeburst.io/deploy-react-to-github-pages-to-create-an-amazing-website-42d8b09cd4d
 
 import React from 'react'
+import Header from './components/header/Header'
 import './App.css'
-
+import translations from './components/lang/translations'
 
 // <>
-const Home = function(){
-  return(
-    <div id='home'>
-        <div id='header'>
-        </div>
+class Home extends React.Component{
+    constructor(props){
+        super(props)
+        this.state = {
+            lang : 'fr'
+        }
+    }
+
+    // changes the langage used
+    changeLangage = () => {
+        var lang =  this.state.lang === 'fr' ? 'us' : 'fr'
+        this.setState({
+            lang : lang,
+        })
+    }
+
+    render(){
+        const lang = this.state.lang
+        return(
+          <div id='home'>
+              <Header lang = {this.state.lang} changeLangage = {this.changeLangage}/>
 
 
-        <div id='middle'>
-            <div id='links'>
-                <div to='/pendu' className='homeButton'>
-                      <div id="pendu">Pendu</div>
-                </div>
-                <div to='/puissance_4' className='homeButton'>
-                    <div id="puissance_4">Puissance 4</div>
-                </div>
-                <div to='/rien' className='homeButton'>
-                    <div id="rien">Rien</div>
-                </div>
-            </div>
-        </div>
+              <div id='middle'>
+                  <div id='links'>
+                      <a href='/pendu' className='homeButton' title = {translations[lang]['title']}>
+                            {translations[lang]['hangMan']}
+                      </a>
+                      <a href='/puissance_4' className='homeButton' title = {translations[lang]['title']}>
+                            {translations[lang]['connectFour']}
+                      </a>
+                      <a href='/hanoiTower' className='homeButton' title = {translations[lang]['title']}>
+                            {translations[lang]['hanoi']}
+                      </a>
+                  </div>
+              </div>
 
-        <div id='bottom'>
-        </div>
+              <div id='bottom'>
+              </div>
 
-    </div>
+          </div>
 
 
-  )
+        )
+    }
+
 }
+
 
 export default Home;

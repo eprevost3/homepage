@@ -21,6 +21,8 @@ html{
 
 #root{
   height: 100%;
+  background-image: url("./img/img_home.jpg");
+  background-size: 100% 100%;
 }
 
 
@@ -28,29 +30,20 @@ html{
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: green;
-}
-
-#header{
-  display: flex;
-  flex-grow: 1;
-  background-color: YELLOW;
 }
 
 #middle{
   display: flex;
-  flex-grow: 8.5;
-  background-color: red;
+  flex-grow: 40;
   justify-content: center;
-  background-image: url("./img/img_home.jpg");
-  background-size: 100% 100%;
+  padding: 30px;
 }
 
 #links{
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  max-width: 500px;
+  max-width: 400px;
   justify-content: space-around;
   align-items: center;
   background-color: rgba(180, 180, 180, 0.5);
@@ -81,6 +74,6 @@ html{
 
 #bottom{
   display: flex;
-  flex-grow: 0.5;
-  background-color: blue;
+  flex-grow: 5;
+  background-color: rgba(120, 120, 120, 0.5);
 }
