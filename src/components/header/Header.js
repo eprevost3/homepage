@@ -6,7 +6,7 @@ import translations from '../lang/translations'
 const Header = ({lang, changeLangage}) => {
     return(
         <div id="header">
-            <Button id='home' image = 'home' alt = 'Flag' title = {translations[lang].titleHome} onclickFunction = {()=>{}}/>
+            <Button id='home' image = 'home' alt = 'Flag' title = {translations[lang].titleHome} onClick = {()=>{window.location.href ="./homepage"}}/>
             <div id="title">{translations[lang].welcome}</div>
             <Button id='lang' image = {translations[lang].image} alt = 'Flag' title = {translations[lang].titleFlag} onClick = {() => {changeLangage()}}/>
 
