@@ -5,7 +5,7 @@ const translations = {
         'image' : 'fr',
         'welcome' : "Bienvenue !",
         'hangMan' : 'Pendu',
-        'connectFour' : 'Puissance 4',
+        'snakeSimplified' : 'Snake simplifié',
         'hanoi' : "Tour d'Hanoï",
         'title' : "Cliquez pour accéder au jeu !",
     },
@@ -15,7 +15,7 @@ const translations = {
         'image' : 'us',
         'welcome' : "Welcome!",
         'hangMan' : 'Hangman',
-        'connectFour' : 'Connect four',
+        'snakeSimplified' : 'Simplified snake',
         'hanoi' : 'Hanoi Tower',
         'title' : "Click to access the game!",
     }

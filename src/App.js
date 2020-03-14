@@ -31,14 +31,14 @@ class Home extends React.Component{
 
               <div id='middle'>
                   <div id='links'>
-                      <a href='/pendu' className='homeButton' title = {translations[lang]['title']}>
-                            {translations[lang]['hangMan']}
-                      </a>
-                      <a href='./' className='homeButton' title = {translations[lang]['title']} onClick = {() => {alert("Pas encore implémenté !");}}>
-                            {translations[lang]['connectFour']}
+                      <a href='./snakeSimplifie' className='homeButton' title = {translations[lang]['title']}>
+                            {translations[lang]['snakeSimplified']}
                       </a>
                       <a href='/tourHanoi' className='homeButton' title = {translations[lang]['title']}>
                             {translations[lang]['hanoi']}
+                      </a>
+                      <a href='/pendu' className='homeButton' title = {translations[lang]['title']}>
+                            {translations[lang]['hangMan']}
                       </a>
                   </div>
               </div>
