@@ -31,7 +31,7 @@ class Home extends React.Component{
 
               <div id='middle'>
                   <div id='links'>
-                      <a href='./snakeSimplifie' className='homeButton' title = {translations[lang]['title']}>
+                      <a href='/snakeSimplifie' className='homeButton' title = {translations[lang]['title']}>
                             {translations[lang]['snakeSimplified']}
                       </a>
                       <a href='/tourHanoi' className='homeButton' title = {translations[lang]['title']}>
