@@ -37,6 +37,9 @@ class Home extends React.Component{
                       <a href='/tourHanoi' className='homeButton' title = {translations[lang]['title']}>
                             {translations[lang]['hanoi']}
                       </a>
+                      <a href='/bounce' className='homeButton' title = {translations[lang]['title']}>
+                            {translations[lang]['bounce']}
+                      </a>
                       <a href='/pendu' className='homeButton' title = {translations[lang]['title']}>
                             {translations[lang]['hangMan']}
                       </a>
