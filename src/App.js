@@ -10,7 +10,7 @@ class Home extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            lang : 'fr'
+            lang : this.readCookie()["language"] || 'fr'
         }
     }
 
@@ -22,8 +22,45 @@ class Home extends React.Component{
         })
     }
 
+    // read cookies we are using to customize the website
+    readCookie(){
+        var cookies = {"language" : ""}
+
+        var cooks = document.cookie
+        // parse result
+        cooks = cooks.split(";")
+
+        // find langage and best score
+        for (var k = 0; k < cooks.length; k++){
+            var str = cooks[k].replace(/\s/g, '')
+
+            if(str.substring(0, 8) === "language"){cookies.language = str.split("=")[1]}
+            else{}
+        }
+        return(cookies)
+    }
+    // set the value of the cookies
+    setValueCookie(dicCookies){
+        // the input dictionnary contains the values of the cookies
+        var keys = Object.keys(dicCookies)
+        var date = new Date()
+        date.setTime(date.getTime() + (365*24*60*60*1000));
+
+        // cookie duration : one year
+        var expires = "expires="+ date.toUTCString();
+
+        keys.forEach((key, idx) => {document.cookie = key + "=" + dicCookies[key] + ";" + expires + ";path=/;"})
+    }
+
+    // update  cookies value
+    udpdateCookies(cookies){this.setValueCookie(cookies)}
+
     render(){
         const lang = this.state.lang
+
+        // updating cookie value (language)
+        this.udpdateCookies({language : lang})
+
         return(
           <div id='home'>
               <Header lang = {this.state.lang} changeLangage = {this.changeLangage}/>
