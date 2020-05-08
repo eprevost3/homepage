@@ -84,6 +84,7 @@ class Home extends React.Component{
               </div>
 
               <div id='bottom'>
+                  <a href="https://fr.freepik.com/photos-vecteurs-libre/fond">{translations[lang]["credit"]}</a>
               </div>
 
           </div>

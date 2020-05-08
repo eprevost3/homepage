@@ -8,7 +8,8 @@ const translations = {
         'snakeSimplified' : 'Snake simplifié',
         'hanoi' : "Tour d'Hanoï",
         'title' : "Cliquez pour accéder au jeu !",
-        'bounce' : "Jeu bounce"
+        'bounce' : "Jeu bounce",
+        'credit' : "Source de l'image",
     },
     'us' : {
         'titleFlag' : 'Click here to change the language',
@@ -20,6 +21,7 @@ const translations = {
         'hanoi' : 'Hanoi Tower',
         'title' : "Click to access the game!",
         'bounce' : "Bounce game",
+        'credit' : "Image source",
     }
 }
 
