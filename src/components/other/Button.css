@@ -1,7 +1,7 @@
 .button{
     display: flex;
-    height: 120px;
-    width: 120px;
+    height: 14vh;
+    width: 14vh;
     border-radius: 100%;
     cursor: pointer;
 }

@@ -19,6 +19,10 @@ html{
   height: 100%;
 }
 
+a {
+    font-size: 2vh;
+}
+
 #root{
   height: 100%;
   background-image: url("./img/img_home.jpg");
@@ -57,7 +61,7 @@ html{
 .homeButton{
   width: 50%;
   min-width: 100px;
-  height: 50px;
+  height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +69,7 @@ html{
   border-style: solid;
   border-color: grey;
   border-width: medium;
-  border-radius: 15px;
+  border-radius: 1.5vh;
 }
 
 .homeButton:hover{

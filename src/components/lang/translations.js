@@ -10,6 +10,7 @@ const translations = {
         'title' : "Cliquez pour accéder au jeu !",
         'bounce' : "Jeu bounce",
         'credit' : "Source de l'image",
+        'mastermind' : "Mastermind",
     },
     'us' : {
         'titleFlag' : 'Click here to change the language',
@@ -22,6 +23,7 @@ const translations = {
         'title' : "Click to access the game!",
         'bounce' : "Bounce game",
         'credit' : "Image source",
+        'mastermind' : "Mastermind",
     }
 }
 
