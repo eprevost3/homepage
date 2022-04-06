@@ -11,6 +11,7 @@ const translations = {
         'bounce' : "Jeu bounce",
         'credit' : "Source de l'image",
         'mastermind' : "Mastermind",
+        'typingTraining' : "Dactylographie"
     },
     'us' : {
         'titleFlag' : 'Click here to change the language',
@@ -24,6 +25,7 @@ const translations = {
         'bounce' : "Bounce game",
         'credit' : "Image source",
         'mastermind' : "Mastermind",
+        'typingTraining' : "Typing training"
     }
 }
 

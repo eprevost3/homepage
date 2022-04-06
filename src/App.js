@@ -68,17 +68,20 @@ class Home extends React.Component{
 
               <div id='middle'>
                   <div id='links'>
+                      <a href='/mastermindApp' className='homeButton' title = {translations[lang]['title']}>
+                            {translations[lang]['mastermind']}
+                      </a>
                       <a href='/snakeSimplifie' className='homeButton' title = {translations[lang]['title']}>
                             {translations[lang]['snakeSimplified']}
                       </a>
                       <a href='/tourHanoi' className='homeButton' title = {translations[lang]['title']}>
                             {translations[lang]['hanoi']}
                       </a>
+                      <a href='/typingTraining' className='homeButton' title = {translations[lang]['title']}>
+                            {translations[lang]['typingTraining']}
+                      </a>
                       <a href='/bounce' className='homeButton' title = {translations[lang]['title']}>
                             {translations[lang]['bounce']}
-                      </a>
-                      <a href='/mastermindApp' className='homeButton' title = {translations[lang]['title']}>
-                            {translations[lang]['mastermind']}
                       </a>
                       <a href='/pendu' className='homeButton' title = {translations[lang]['title']}>
                             {translations[lang]['hangMan']}
