@@ -49,7 +49,7 @@ class Home extends React.Component{
         // cookie duration : one year
         var expires = "expires="+ date.toUTCString();
 
-        keys.forEach((key, idx) => {document.cookie = key + "=" + dicCookies[key] + ";" + expires + ";path=/;"})
+        keys.forEach((key, idx) => {document.cookie = `${key}=${dicCookies[key]};${expires};path=/;SameSite=None;Secure`})
     }
 
     // update  cookies value
